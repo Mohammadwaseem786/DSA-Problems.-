@@ -6,10 +6,9 @@ Question:
    while(i<n){
     sum+=a[i];
   if(sum==k) count+=1;
-  if(mp.find(sum-k)!=mp.end()){
+  if(mp.find(sum-k)!=mp.end())
     count+=mp[sum-k];
     mp[sum]+=1;
-    }
   i+=1;
  }
    return count;
