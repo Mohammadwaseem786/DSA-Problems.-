@@ -1,0 +1,20 @@
+ void swapsortarray(int a[],int n){
+   int i=0;
+   while(i<n){
+    if(a[i]!=a[a[i]-1]) 
+      swap(a[i],a[a[i]-1]);
+    else
+      i++;
+   }
+  for(int i=0;i<n;i++){
+    if(a[i]!=i+1){
+    cout<<i+1;  // i+1 is Missing Number In Array
+    cout<<a[i]; // here a[i] is duplicate number in Array
+    }
+  }
+}
+ *Benefits of this algorithm
+ 1) To find multiple duplicate and missing numbers in array
+ *Draw Backs Of This Algorithm
+ 1) It Works In The Range Of [1,n]
+ 2) If Question Is Without Modifying The Array Then This Algorithm Fails
