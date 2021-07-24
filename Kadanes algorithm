@@ -1,0 +1,10 @@
+ // this algorithm works for both +ve and -ve elements in an array. 
+int maxsumsubarr(int a[],int n){
+     int meh,msf;
+    for(int i=0;i<n;i++){
+       meh+=a[i];
+      if(meh<a[i]) meh=a[i];
+      if(msf<meh)  msf=meh;
+      }
+    return msf;
+  }
