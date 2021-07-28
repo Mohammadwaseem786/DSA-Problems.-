@@ -1,0 +1,25 @@
+Question:
+ Find Next Greater Element To Left Side Of An Array. 
+
+ vector<int> nxtgreele(int a[],int n){
+      vector<int>ans;
+      stack<int>st;
+  for(int i=0;i<n;i++){
+   if(st.size()==0) 
+   ans.push_back(-1);
+  if(st.size()>0 && st.top()>a[i]) 
+    ans.push_back(st.top());
+ if(st.size()>0 && st.top()<=a[i]){
+   while(s.size()>0 && st.top<=a[i]) 
+     st.pop();
+  if(st.size()==0) 
+   ans.push_back(-1);
+  else
+   ans.push_back(st.top());
+  }
+ st.push(a[i]);
+ }
+  return ans;
+}
+
+ 
