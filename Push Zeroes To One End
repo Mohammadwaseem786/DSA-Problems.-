@@ -1,0 +1,11 @@
+ Question:
+Push Zeroes To End Side Of An Array Such That Order Of The Elements In Array Should Not Change 
+void pushzeroesend(int a[],int n){
+    int p=-1;
+  for(int i=0;i<n;i++){
+     if(a[i]!=0){
+      p++;
+     swap(a[p],a[i]);
+    }
+  }
+}
