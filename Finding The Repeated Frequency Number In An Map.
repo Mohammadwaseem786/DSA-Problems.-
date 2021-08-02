@@ -1,0 +1,15 @@
+Question:
+ To find repeated frequency number in map. 
+  Output: whenever we find repeated frequency will return false else true. 
+   void finduniqueoccurence(int a[],int n){
+    unordered_map<int,int>mp,temp;
+    for(auto it:a) mp[it]++;
+    for(auto it:mp){
+     if(temp.find(it.second)!=temp.end()) 
+        return false;
+      else
+       temp[it.second]=1;
+    }
+   return true;
+ }
+    
