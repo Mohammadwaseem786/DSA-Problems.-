@@ -1,0 +1,5 @@
+Question: given an array return true if sum of continous 
+ Elements in array (the size of continous sub-array>=2)is multiple of k. 
+ Algorithm Used:unordered_map<int,int>mp;
+
+ bool 
