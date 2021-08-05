@@ -1,0 +1,19 @@
+Question: Find Majority Element In Array. Which is occunred >=n/2times
+ Algorithm Used:Moore Voting Algorithm. 
+  int findmajorityelement(int a[],int n){
+    int count=1,res=0:
+    for(int i=0;i<n;i++){
+     if(a[i]==a[res]) count++;
+      else count--;
+     if(count==0){
+      count=1;
+      res=i;
+     }
+   }
+   count=0;  // res will have index of maximum element
+    for(int i=0;i<n;i++)
+     if(a[i]==a[res]) count++;
+     if(count<=n/2) return -1;
+      else
+      return a[res];
+  }
