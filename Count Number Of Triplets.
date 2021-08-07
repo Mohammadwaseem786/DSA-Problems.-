@@ -1,0 +1,17 @@
+Question: Given An Array Count the number of triplets such that
+ The Sum Of Two Elements Is Equal To Third Element. 
+ Algorithm Used:Two Pointers Technique. 
+ 
+  int findtripletpair(int a[],int n){
+     int count=0;
+     sort(a,a+n);
+     for(int i=n-1;i>=0;i--){
+      int j=0,k=i-1;
+      while(j<k){
+        if(a[i]==a[j]+a[k]) count++;
+        if(a[i]>a[j]+a[k]) j+=1;
+        else  k--;
+       }
+    }
+     return count;
+  }
