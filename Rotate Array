@@ -1,0 +1,11 @@
+Question:
+ Rotate array by k times to right side
+Ex-> arr={2,5,6,8}; k=3;
+Output->{5,6,8,2}
+
+ void rotatearray(int a[],int n,int k){
+      k%=n;
+     reverse(nums.begin(),nums.begin()+n-k);
+     reverse(nums.begin()+n-k,nums.end());
+     reverse(nums.begin(),nums.end());
+   }
